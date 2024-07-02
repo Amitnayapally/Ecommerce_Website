@@ -11,9 +11,9 @@ import { Home, Product, Products, AboutPage, ContactPage, Cart, Login, Register,
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/Ecommerce_Website">
     <Provider store={store}>
-      <Routes>
+      <Routes basename="/Ecommerce_Website">
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Products />} />
         <Route path="/product/:id" element={<Product />} />
