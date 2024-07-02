@@ -15,7 +15,8 @@ https://amitnayapally.github.io/Ecommerce_Website/
 
 ## Screenshots
 
-https://github.com/Amitnayapally/Ecommerce_Website/blob/6ab47490dae43307dd231b2b043c6a535454daef/ecommerce.png
+![image alt](https://github.com/Amitnayapally/Ecommerce_Website/blob/6ab47490dae43307dd231b2b043c6a535454daef/ecommerce.png)
+
 
 
 
