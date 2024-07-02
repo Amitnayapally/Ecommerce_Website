@@ -1,4 +1,5 @@
 import React from "react";
+import img1 from "./assets/main.jpg";
 
 const Home = () => {
   return (
@@ -7,8 +8,8 @@ const Home = () => {
         <div className="card bg-dark text-white border-0 mx-3">
           <img
             className="card-img img-fluid"
-            src="./assets/main.png.jpg"
-            alt="Card"
+            src={img1}
+            alt="card"
             height={500}
           />
           <div className="card-img-overlay d-flex align-items-center">

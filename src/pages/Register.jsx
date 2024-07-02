@@ -26,7 +26,7 @@ const Register = () => {
                                     type="email"
                                     class="form-control"
                                     id="Email"
-                                    placeholder="name@example.com"
+                                    placeholder="name@gmail.com"
                                 />
                             </div>
                             <div class="form  my-3">
@@ -42,7 +42,7 @@ const Register = () => {
                                 <p>Already has an account? <Link to="/login" className="text-decoration-underline text-info">Login</Link> </p>
                             </div>
                             <div className="text-center">
-                                <button class="my-2 mx-auto btn btn-dark" type="submit" disabled>
+                                <button class="my-2 mx-auto btn btn-dark" type="submit" enable>
                                     Register
                                 </button>
                             </div>

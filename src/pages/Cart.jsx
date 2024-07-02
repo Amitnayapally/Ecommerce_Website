@@ -90,7 +90,7 @@ const Cart = () => {
                                     removeItem(item);
                                   }}
                                 >
-                                  <i className="fas fa-minus"></i>
+                                  <button> - <fa-minus /></button>
                                 </button>
 
                                 <p className="mx-5">{item.qty}</p>
@@ -101,7 +101,7 @@ const Cart = () => {
                                     addItem(item);
                                   }}
                                 >
-                                  <i className="fas fa-plus"></i>
+                                  <button> + < fa-plus /></button>
                                 </button>
                               </div>
 
