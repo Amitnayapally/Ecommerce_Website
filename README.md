@@ -15,7 +15,8 @@ https://amitnayapally.github.io/Ecommerce_Website/
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/fQ293tm/image.png)
+https://github.com/Amitnayapally/Ecommerce_Website/blob/6ab47490dae43307dd231b2b043c6a535454daef/ecommerce.png
+
 
 
 ## Run Locally
