@@ -10,7 +10,10 @@ const Checkout = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-12 py-5 bg-light text-center">
-            <h4 className="p-3 display-5">No item in Cart</h4>
+          <h2 className="p-3 display-5">Congratulations..!!</h2>
+          <h2 className="p-3 display-5">Your payment has been successfully processed. </h2>
+            <h2 className="p-3 display-5"> Your order has been placed & We are now preparing it for shipment.</h2>
+            <h2 className="p-3 display-5">Thank You for Your Purchase!</h2>
             <Link to="/" className="btn btn-outline-dark mx-4">
               <i className="fa fa-arrow-left"></i> Continue Shopping
             </Link>
@@ -155,6 +158,16 @@ const Checkout = () => {
                         <select className="form-select" id="country" required>
                           <option value="">Choose...</option>
                           <option>India</option>
+                          <option>United States</option>
+                          <option>Canada</option>
+                          <option>Australia</option>
+                          <option>United Kingdom</option>
+                          <option>Germany</option>
+                          <option>France</option>
+                          <option>Japan</option>
+                          <option>China</option>
+                          <option>Brazil</option>
+                          <option>South Africa</option>
                         </select>
                         <div className="invalid-feedback">
                           Please select a valid country.
@@ -168,7 +181,15 @@ const Checkout = () => {
                         <br />
                         <select className="form-select" id="state" required>
                           <option value="">Choose...</option>
+                          <option>West Bengal</option>
                           <option>Punjab</option>
+                          <option>Delhi</option>
+                          <option>Maharashtra</option>
+                          <option>Karnataka</option>
+                          <option>Gujarat</option>
+                          <option>Tamil Nadu</option>
+                          <option>Uttar Pradesh</option>
+                          <option>Bihar</option>
                         </select>
                         <div className="invalid-feedback">
                           Please provide a valid state.
@@ -194,7 +215,7 @@ const Checkout = () => {
 
                     <hr className="my-4" />
 
-                    <h4 className="mb-3">Payment</h4>
+                    <h4 className="mb-3">Continue Payment Process: </h4>
 
                     <div className="row gy-3">
                       <div className="col-md-6">
@@ -205,12 +226,9 @@ const Checkout = () => {
                           type="text"
                           className="form-control"
                           id="cc-name"
-                          placeholder=""
+                          placeholder="Full name as displayed on card"
                           required
                         />
-                        <small className="text-muted">
-                          Full name as displayed on card
-                        </small>
                         <div className="invalid-feedback">
                           Name on card is required
                         </div>
@@ -218,60 +236,76 @@ const Checkout = () => {
 
                       <div className="col-md-6">
                         <label for="cc-number" className="form-label">
-                          Credit card number
+                        Credit or Debit card number
                         </label>
                         <input
-                          type="text"
+                          type="tel"
                           className="form-control"
                           id="cc-number"
-                          placeholder=""
+                          maxLength="16"
+                          placeholder="1234 1234 1234 1234"
                           required
                         />
                         <div className="invalid-feedback">
-                          Credit card number is required
+                          Credit or Debit card number is required
                         </div>
                       </div>
 
                       <div className="col-md-3">
-                        <label for="cc-expiration" className="form-label">
-                          Expiration
+                        <label for="cc-expirationmonth" className="form-label">
+                          Expiration Month 
                         </label>
                         <input
-                          type="text"
+                          type="tel"
                           className="form-control"
-                          id="cc-expiration"
-                          placeholder=""
+                          id="cc-expirationmonth"
+                          maxLength="2"
+                          placeholder="01 - 12"
                           required
                         />
                         <div className="invalid-feedback">
-                          Expiration date required
+                          Expiration Month required
                         </div>
                       </div>
-
                       <div className="col-md-3">
-                        <label for="cc-cvv" className="form-label">
-                          CVV
+                        <label for="cc-expirationyear" className="form-label">
+                          Expiration Year 
                         </label>
                         <input
-                          type="text"
+                          type="tel"
+                          className="form-control"
+                          id="cc-expirationyear"
+                          maxLength="4"
+                          placeholder="20xx"
+                          required
+                        />
+                        <div className="invalid-feedback">
+                          Expiration Year required
+                        </div>
+                      </div>
+                      <div className="col-md-3">
+                        <label for="cc-cvv" className="form-label"> CVV </label>
+                        <input
+                          type="tel"
                           className="form-control"
                           id="cc-cvv"
-                          placeholder=""
+                          maxLength="3"
+                          placeholder="000"
                           required
-                        />
+                        /> 
                         <div className="invalid-feedback">
-                          Security code required
+                          CVV is required
                         </div>
                       </div>
                     </div>
 
                     <hr className="my-4" />
 
-                    <button
+                     <button
                       className="w-100 btn btn-primary "
-                      type="submit" disabled
+                      type="submit" enable 
                     >
-                      Continue to checkout
+                    Pay Now 
                     </button>
                   </form>
                 </div>
@@ -286,7 +320,7 @@ const Checkout = () => {
     <>
       <Navbar />
       <div className="container my-3 py-3">
-        <h1 className="text-center">Checkout</h1>
+        <h1 className="text-center">Checkout & Payment Gateway</h1>
         <hr />
         {state.length ? <ShowCheckout /> : <EmptyCart />}
       </div>
